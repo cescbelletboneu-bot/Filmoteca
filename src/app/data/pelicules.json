@@ -1,0 +1,68 @@
+[
+  {
+    "id": 1,
+    "titol": "El padrí",
+    "director": "Francis Ford Coppola",
+    "any": 1972,
+    "durada": 175,
+    "genere": "Drama",
+    "valoracio": 9,
+    "disponible": true,
+    "cartellUrl": "assets/cartells/el-padri.jpg"
+  },
+  {
+    "id": 2,
+    "titol": "Pulp Fiction",
+    "director": "Quentin Tarantino",
+    "any": 1994,
+    "durada": 154,
+    "genere": "Crim",
+    "valoracio": 9,
+    "disponible": true,
+    "cartellUrl": "assets/cartells/pulp-fiction.jpg"
+  },
+  {
+    "id": 3,
+    "titol": "El silenci dels anyells",
+    "director": "Jonathan Demme",
+    "any": 1991,
+    "durada": 118,
+    "genere": "Thriller",
+    "valoracio": 8,
+    "disponible": false,
+    "cartellUrl": "assets/cartells/silenci-dels-anyells.jpg"
+  },
+  {
+    "id": 4,
+    "titol": "Amèlie",
+    "director": "Jean-Pierre Jeunet",
+    "any": 2001,
+    "durada": 122,
+    "genere": "Comèdia romàntica",
+    "valoracio": 8,
+    "disponible": true,
+    "cartellUrl": "assets/cartells/amelie.jpg"
+  },
+  {
+    "id": 5,
+    "titol": "Matrix",
+    "director": "Lana Wachowski, Lilly Wachowski",
+    "any": 1999,
+    "durada": 136,
+    "genere": "Ciència ficció",
+    "valoracio": 9,
+    "disponible": false,
+    "cartellUrl": "assets/cartells/matrix.jpg"
+  },
+  {
+    "id": 6,
+    "titol": "Ciutat de Déu",
+    "director": "Fernando Meirelles",
+    "any": 2002,
+    "durada": 130,
+    "genere": "Drama",
+    "valoracio": 7,
+    "disponible": true,
+    "cartellUrl": ""
+  }
+]

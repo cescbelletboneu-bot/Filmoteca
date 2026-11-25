@@ -1,0 +1,27 @@
+<article [class.destacada]="peli().valoracio >= 8.5" [class.llogada]="llogada()">
+  <img
+    [src]="peli().cartellUrl || cartellPerDefecte"
+    [alt]="'Cartell de ' + peli().titol"
+    width="120"
+  />
+  <h2>{{ numero() }}. {{ peli().titol }} ({{ peli().any }})</h2>
+  <p>Director: {{ peli().director }}</p>
+  <p>Gènere: {{ peli().genere }} · Durada: {{ peli().durada }} min</p>
+  <p>
+    Valoració:
+    <span [style.color]="peli().valoracio >= 8 ? '#2e7d32' : '#c62828'">{{ peli().valoracio }}</span>
+  </p>
+  <p>{{ peli().disponible ? 'Disponible' : 'No disponible' }}</p>
+
+  <button
+    type="button"
+    [disabled]="!peli().disponible || llogada()"
+    (click)="llogar.emit(peli().id)"
+  >
+    Llogar
+  </button>
+
+  @if (llogada()) {
+    <button type="button" (click)="retornar.emit(peli().id)">Retornar</button>
+  }
+</article>

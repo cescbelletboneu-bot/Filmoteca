@@ -1,0 +1,22 @@
+<h1>Catàleg</h1>
+
+<p>
+  <label for="cerca">Cerca per títol:</label>
+  <input id="cerca" type="search" [value]="filtreTitol" (input)="onCerca($event)" placeholder="Escriu un títol" />
+</p>
+
+<ul>
+  @for (peli of peliculesFiltrades; track $index) {
+    <li>
+      <app-fitxa-pelicula
+        [peli]="peli"
+        [numero]="$index + 1"
+        [llogada]="estaLlogada(peli.id)"
+        (llogar)="llogar($event)"
+        (retornar)="retornar($event)"
+      />
+    </li>
+  } @empty {
+    <li>No s'han trobat pel·lícules.</li>
+  }
+</ul>
